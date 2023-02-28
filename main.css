@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --azul: #3868D6;
+    --background: #EFEFEF;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--azul);
+    padding: 1em 0;
+    margin-bottom: 2em;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+nav ul {
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li:first-child {
+    margin-right: 1em;
+}
+
+.about {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.about img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+section h2 {
+    color: var(--azul);
+    font-style: italic;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid var(--azul);
+}
+
+.productsDisplay {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+.products {
+    margin-bottom: 2em;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: .8em;
+    width: 100%;
+}
+
+.product img {
+
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+}
+
+.product strong {
+    font-size: 1.2em;
+}
+
+.product button {
+    padding: .5em;
+    background-color: var(--azul);
+    color: #ffff;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.3em;
+}
+
+.product img {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        display: grid;
+        grid-template-columns: 40% 54%;
+        column-gap: 6%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 80%;
+    }
+
+    .productsDisplay {
+        display: block;
+    }
+
+    .product {
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        width: 80%;
+    }
+
+    .productsDisplay {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+}
