@@ -1,0 +1,93 @@
+.carousel-item img {
+    max-height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.topPosition {
+    object-position: top;
+}
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.carousel-caption h2 {
+    font-size: 5em;
+}
+
+.carousel-caption p {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.card img {
+    max-width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.position-image {
+    object-position: 50% 20%;;
+}
+
+.verPromocoes {
+    width: fit-content;
+}
+
+#promocoes {
+    height: 100vh;
+}
+
+#promocoes h2 {
+    text-align: center;
+    font-size: 3em;
+    margin: .6em 0;
+}
+
+del {
+    margin-right: .3em;
+}
+
+@media screen and (max-width: 767px) {
+
+    .carousel-caption {
+        max-height: 500px;
+    }
+
+    .carousel-caption a {
+        display: none;
+    }
+
+    .carousel-caption h2 {
+        font-size: 3em;
+    }
+
+    .carousel-caption p {
+        font-size: 1.4em;
+    }
+
+.row {
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+    .col-4 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .row {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+}

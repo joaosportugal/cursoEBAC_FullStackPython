@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Hortifruti</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div id="carousel-id" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100 img1" src="./images/frutasVermelhas.jpg" alt="Frutas Vermelhas">
+                <div class="carousel-caption">
+                    <h2>EBAC Hortifruti</h2>
+                    <p>Frutas vermelhas da fazenda</p>
+                    <a href="#promocoes" class="btn btn-primary btn-lg verPromocoes">Ver promoções</a>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100 img2" src="./images/vegetables1.jpg" alt="vegetais">
+                <div class="carousel-caption">
+                    <h2>EBAC Hortifruti</h2>
+                    <p>Legumes sempre frescos</p>
+                    <a href="#promocoes" class="btn btn-primary btn-lg verPromocoes">Ver promoções</a>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100 topPosition" src="./images/capuccino.jpg" alt="café">
+                <div class="carousel-caption">
+                    <h2>EBAC Hortifruti</h2>
+                    <p>Todo o aroma no sabor do café</p>
+                    <a href="#promocoes" class="btn btn-primary btn-lg verPromocoes">Ver promoções</a>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-id" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-id" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#carousel-id" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="2"></button>
+        </div>
+        
+    </div>
+    
+    <section id="promocoes" class="container">
+        <h2>Promoções</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <strong>PADARIA</strong>
+                    </div>
+                    <img src="./images/bread.jpg" alt="mercadoria">
+                    <div class="card-body">
+                        <h4 class="card-title">Pão de Fermentação Natural</h4>
+                        <h5 class="card-subtitle"><del>R$25,00</del>R$18,00</h5>
+                        <p class="card-text">Feito artesanalmente por nossos padeiros especialistas em comida natural</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <strong>TEMPEROS</strong>
+                    </div>
+                    <img src="./images/azeiteArtesanal.jpg" class="position-image" alt="mercadoria">
+                    <div class="card-body">
+                        <h4 class="card-title">Pão de Fermentação Natural</h4>
+                        <h5 class="card-subtitle"><del>R$25,00</del>R$18,00</h5>
+                        <p class="card-text">Feito artesanalmente por nossos padeiros especialistas em comida natural</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <strong>QUEIJARIA</strong>
+                    </div>
+                    <img src="./images/queijoArtesanal.jpg" alt="mercadoria">
+                    <div class="card-body">
+                        <h4 class="card-title">Pão de Fermentação Natural</h4>
+                        <h5 class="card-subtitle"><del class="mr-5">R$25,00</del>R$18,00</h5>
+                        <p class="card-text">Feito artesanalmente por nossos padeiros especialistas em comida natural</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
