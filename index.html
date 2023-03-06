@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0">
+                <img src="./assets/images/Logo Branca (Fundo Transparente).png" alt="Logo Musicarse">
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-musicarse" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#aulas" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Aulas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#planos" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Planos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/images/baixo.jpg" alt="Baixo Elétrico">
+                    <div class="carousel-caption">
+                        <h2 class="section-title">Musicarse</h2>
+                        <p>A sua escola de música</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/images/guitarras.jpg" alt="Guitarras">
+                    <div class="carousel-caption">
+                        <h2 class="section-title">Musicarse</h2>
+                        <p>A sua escola de música</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/images/flautaDoce.jpg" alt="Flauta Doce">
+                    <div class="carousel-caption">
+                        <h2 class="section-title">Musicarse</h2>
+                        <p>A sua escola de música</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <section id="sobre-a-musicarse">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img id="professor" src="./assets/images/professorJoao.jpeg" class="d-block w-100 rounded" alt="Foto do Espaço Interno da Musicarse">
+                        </div>
+                        <div class="col-md-8 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a Musicarse</span></h2>
+                            <p>
+                                Musicarse é uma escola de música fundada em 2019 pelo professor João Portugal, que oferece aulas de violino, flauta, violão e teoria musical para alunos de todos os níveis de habilidade. A escola enfatiza uma abordagem personalizada para o ensino, adaptando as aulas às necessidades individuais e aos objetivos de cada aluno. Além disso, a escola oferece a oportunidade de se apresentar em recitais regulares, proporcionando uma experiência enriquecedora de desempenho para os alunos. Com uma equipe de professores altamente qualificados e um ambiente acolhedor e amigável, a Musicarse é uma escola de música de alta qualidade
+                                para qualquer um que queira aprender a tocar violino ou aprofundar seu conhecimento em teoria musical.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o Professor</span></h3>
+                            <p>
+                                João Portugal é um professor de música altamente habilidoso e experiente, com mais de 8 anos de experiência em dar aulas de violino e teoria musical. Formado na UNIRIO, ele tem uma sólida base teórica e técnica, além de uma habilidade natural para tocar vários instrumentos, incluindo violão, flauta e violino, desde tenra idade. 
+                                Seus alunos são beneficiados por seu vasto conhecimento e abordagem personalizada de ensino.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aulas" class="pt-5 pb-5 mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Aulas para todas <span class="text-colored">as idades</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./assets/images/guitar.jpg" alt="" class="d-block w-100 mb-2 rounded">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Violão
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam amet voluptatum ea ratione quae dolores consequatur vel commodi ut! Similique quaerat cum ad aliquid eos commodi eius repellendus porro.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/images/flute.jpg" alt="" class="d-block w-100 mb-2 rounded">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Flauta
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam amet voluptatum ea ratione quae dolores consequatur vel commodi ut! Similique quaerat cum ad aliquid eos commodi eius repellendus porro.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/images/violin.jpg" alt="" class="d-block w-100 mb-2 rounded">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Violino
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam amet voluptatum ea ratione quae dolores consequatur vel commodi ut! Similique quaerat cum ad aliquid eos commodi eius repellendus porro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="planos" class="pt-5 pb-5 mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Planos <span class="text-colored">de aula</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-aulas">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#basico" class=" fw-bold text-start nav-link text-colored active">Básico</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#premium" class=" fw-bold text-start nav-link text-colored">Premium</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#completo" class=" fw-bold text-start nav-link text-colored">Completo</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="basico">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./assets/images/aulemGrupo.jpg" alt="" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-colored fw-bold">Aula em Grupo</h5>
+                                        <p>As aulas em grupo podem ser uma ótima maneira de desenvolver habilidades sociais, colaborativas e de liderança, 
+                                            além de proporcionar uma experiência divertida e enriquecedora de aprendizado em grupo..</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./assets/images/metronomo.jpg" alt="" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-colored fw-bold">1h por Semana</h5>
+                                        <p>Com uma prática consistente e focada fora das aulas, um aluno pode obter um bom avanço no aprendizado do instrumento
+                                            com uma hora de aula por semana.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="premium">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./assets/images/aulaIndividual.jpg" alt="" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-colored fw-bold">Aulas Individuais</h5>
+                                        <p>A aula individual oferece instrução personalizada que é adaptada às necessidades e habilidades específicas de cada aluno. Além disso, os alunos têm mais tempo para trabalhar em áreas problemáticas ou difíceis, 
+                                            o que pode ajudá-los a progredir mais rapidamente do que em um ambiente de grupo.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./assets/images/materialPersonalizado.jpg" alt="" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-colored fw-bold">Material Personalizado</h5>
+                                        <p>Ao escolher o plano premium, o aluno ganha acesso a materiais personalizados, incluindo partituras e exercícios adaptados às suas habilidades e interesses musicais. Isso pode ajudar o aluno a se envolver mais profundamente 
+                                            com o aprendizado do instrumento e progredir de maneira mais eficaz.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="completo">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./assets/images/aprendizadoCompleto.jpg" alt="" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-colored fw-bold">Aprendizado Completo</h5>
+                                        <p>A modalidade completa oferece tudo o que o plano básico e premium oferecem e ainda mais. Com aulas de violino abrangentes, instrução avançada em teoria musical, preparação para apresentações e instrução personalizada, 
+                                            os alunos têm a oportunidade de aprimorar suas habilidades musicais de maneira completa e progressiva.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./assets/images/recital.jpg" alt="" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-colored fw-bold">Recitais Mensais</h5>
+                                        <p>Apresentar-se em recitais regularmente pode ajudar a desenvolver habilidades de desempenho, reduzir a ansiedade no palco e aumentar a confiança do músico. Além disso, os recitais oferecem uma oportunidade valiosa para receber 
+                                            feedback dos ouvintes e para compartilhar a música com a comunidade.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./assets/images/teoriaMusical.jpg" alt="" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-colored fw-bold">Teoria Musical e Percepção</h5>
+                                        <p>O conhecimento de teoria musical e percepção pode melhorar a habilidade de um músico para ler partituras,
+                                            compor e improvisar, além de melhorar a afinação e a precisão da execução. Essas habilidades também podem ajudar os músicos a compreender e apreciar a música em um nível mais profundo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <di class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                </di>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu em-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 mx-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço</h3>
+                            <p>Rua da Música, nº 666, Rio de Janeiro, RJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

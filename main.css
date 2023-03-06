@@ -1,0 +1,102 @@
+:root {
+    --azul-principal: #366ed8;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: var(--azul-principal);
+}
+
+.navbar-brand img {
+    max-width: 70px;
+    margin-top: -1em;
+    margin-bottom: -1em;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: var(--azul-principal);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-aulas .nav-link.active:hover {
+    color:#fff;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 90vh;
+    object-fit: cover;
+    filter: brightness(.6);
+}
+
+.carousel-caption h2 {
+    font-size: 5em;
+}
+
+#professor {
+    max-height: 700px;
+    object-fit: cover;
+}
+
+.section-title {
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#sobre-a-musicarse,
+#planos {
+    background-color: #dbe6fa;
+}
+
+#aulas img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.tab-pane img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.text-colored {
+    color: var(--azul-principal);
+}
+
+.nav-aulas .nav-link.active,
+#fale-conosco button {
+    background-color: var(--azul-principal);
+    color: #fff;
+}
+
+.nav-aulas .nav-link:hover {
+    color: var(--azul-principal)
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 3em;
+    }
+}
