@@ -1,0 +1,39 @@
+@use 'config/config.scss';
+@use 'config/colors.scss';
+@use 'sections/header.scss';
+@use 'sections/products.scss';
+
+body {
+    background-color: colors.$bg-color;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 56px 0;
+}
+
+@media screen and (max-width: config.$mobile) {
+    .products {
+        display: block;
+
+        .product-item  {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: config.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
