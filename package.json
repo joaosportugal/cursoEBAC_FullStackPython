@@ -1,0 +1,19 @@
+{
+  "name": "project_mod17_exercicioless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler ./source/styles ./build/styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "g": "^2.0.1"
+  },
+  "devDependencies": {
+    "less": "^4.1.3",
+    "less-watch-compiler": "^1.16.3"
+  }
+}
