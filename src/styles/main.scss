@@ -1,0 +1,91 @@
+$corTextoDefault: #fff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $corTextoDefault;
+}
+
+@mixin title($fontSize: 40px) {
+    font-size: $fontSize;
+    color: $corTextoDefault;
+    font-weight: bold;
+}
+
+@mixin text($fontSize: 18px) {
+    font-size: $fontSize;
+    color: $corTextoDefault;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+body {
+    background-color: black;
+}
+
+.title {
+    @include title;
+}
+
+.title--big {
+    @include title(64px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(16px);
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to left, rgba(21, 21, 21, 0) 0%, rgb(0, 0, 0)), 
+    linear-gradient(rgba(21, 21, 21, 0) 80%, rgb(0, 0, 0)), 
+    url('../images/fotoPerfil.jpg') 
+    center center / cover;
+
+        .invitation {
+            padding: 100px;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            width: 100%;
+
+            .title--big,
+            .button,
+            .text,
+            .title {
+                margin-bottom: 32px;
+            }
+
+            &__moviedescript {
+                .text {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.button {
+    padding: 12px 32px;
+    background-color: $corTextoDefault;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    width: fit-content;
+    text-align: center;
+}
