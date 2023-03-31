@@ -18,4 +18,9 @@ const timer = setInterval(function() {
     
     const timerDisplay = document.getElementById('timer');
     timerDisplay.innerHTML = `${daysUntilEvent}d ${hoursUntilEvent}h ${minutesUntilEvent}m ${secondsUntilEvent}s`
+
+    if (untilEvent < 0) {
+        clearInterval(timer);
+        timerDisplay.innerHTML = "O evento já começou!"
+    }
 }, 1000)
