@@ -1,0 +1,131 @@
+$corTextoDefault: #fff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $corTextoDefault;
+}
+
+@mixin title($fontSize: 40px) {
+    font-size: $fontSize;
+    color: $corTextoDefault;
+    font-weight: bold;
+}
+
+@mixin text($fontSize: 18px) {
+    font-size: $fontSize;
+    color: $corTextoDefault;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+body {
+    background-color: black;
+}
+
+.title {
+    @include title;
+}
+
+.title--big {
+    @include title(64px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(16px);
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to left, rgba(21, 21, 21, 0) 0%, rgb(0, 0, 0)), 
+    linear-gradient(rgba(21, 21, 21, 0) 80%, rgb(0, 0, 0)), 
+    url('https://res.cloudinary.com/hvzbb2hdx/image/upload/c_scale,f_auto,w_1600/v1/playlists/bp-select/heroWeb/9122c440-4f31-11ed-b28c-4ff44f71e5e6') 
+    center center / cover;
+}
+
+    .description {
+        padding: 100px;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+
+        .title--big,
+        .button,
+        .text {
+            margin-bottom: 32px;
+        }
+
+        &__moviedescript {
+            .text {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.button {
+    padding: 12px 32px;
+    background-color: $corTextoDefault;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    width: fit-content;
+    text-align: center;
+}
+
+.videos {
+    padding: 100px;
+    margin-top: 160px;
+
+    .title {
+        margin-bottom: 32px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        max-width: 300px;
+        width: 100%;
+
+        &__picture {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .title--small {
+            margin-bottom: 8px;
+        }
+    }
+
+    .time {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
